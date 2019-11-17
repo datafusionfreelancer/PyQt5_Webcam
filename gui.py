@@ -1,8 +1,4 @@
-
-# Webcam Control
-
 from  cameraX import WebcamX
-
 
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QLabel, QFrame
 from PyQt5.QtCore import QSize, QRect, Qt, QThread, QTimer
