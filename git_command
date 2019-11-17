@@ -1,0 +1,57 @@
+sudo apt-get install git
+
+ssh-keygen -t rsa -b 4096 -C "<username>@gmail.com"
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+ssh -T git@github.com
+
+git config --global user.name "<username>"
+git config --global user.email <username>@gmail.com
+git config --list
+
+git clone https://github.com/<username>/PyQt5_Webcam.git
+
+git add .
+git add README.md
+
+git commit -m 'Update README'
+
+git push
+
+git remote
+git remote add origin git@github.com:<username>/PyQt5_Webcam.git
+git remote add origin https://github.com/<username>/PyQt5_Webcam.git
+git push -u origin master
+
+git rm --cached <filename>
+git rm <filename>
+
+# Undo the change.
+git checkout -- main.cpp 
+
+git diff ssh_name
+
+git log --oneline
+git log --pretty=oneline
+
+git branch -d <branch_name>
+git reset --hard
+git reset --soft
+
+git push -u origin master
+git push --set-upstream origin tab
+
+git stash
+git stash list
+git stash apply <name>
+git stash pop
+git stash save "stash messsage"
+
+git update-index --assume-unchanged <filename>
+git update-index --no-assume-unchanged <filename>
+
+
+
+
