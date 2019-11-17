@@ -1,12 +1,6 @@
 
-
-# Webcam Control
-
-
 from gui import appGUI
 import sys
-
-
 
 from PyQt5.QtWidgets import QApplication
 
